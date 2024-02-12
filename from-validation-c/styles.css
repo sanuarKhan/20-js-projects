@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto:ital@1&display=swap");
+:root {
+  --success-color: #22c245;
+  --error-color: #c72323;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://images.pexels.com/photos/1097460/pexels-photo-1097460.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.315);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 3px black;
+  background: #4f4f3ab8;
+}
+
+.form {
+  font-size: 18px;
+  color: rgba(6, 68, 68, 0.747);
+  margin: 10px 20px;
+  padding: 30px 40px;
+}
+.form h2 {
+  font-size: 30px;
+  color: rgba(6, 68, 68, 0.747);
+  text-transform: capitalize;
+  text-align: center;
+  margin: 0 0 20px;
+}
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.form-control label {
+  display: block;
+  color: aquamarine;
+  margin-bottom: 5px;
+}
+.form-control input {
+  font-size: 18px;
+  color: rgba(6, 68, 68, 0.747);
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #0f0f0f;
+  display: block;
+  border-radius: 4px;
+}
+.form-control input:focus {
+  outline: 0;
+  border-color: rgb(142, 144, 230);
+}
+.form-control.success input {
+  border-color: var(--success-color);
+}
+.form-control.error input {
+  border-color: var(--error-color);
+}
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  visibility: hidden;
+}
+.form-control.error small {
+  visibility: visible;
+}
+.form button {
+  font-size: 18px;
+  color: rgb(3, 60, 60);
+  padding: 10px;
+  font-weight: bold;
+  width: 100%;
+  background: #7de874ba;
+  border: 2px solid #016e3c;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+}

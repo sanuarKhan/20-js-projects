@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanuar's form validation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <dic class="container">
+      <form id="form" class="form">
+        <h2>fill up the form</h2>
+        <div class="form-control">
+          <label for="username">usename</label>
+          <input
+            type="text"
+            name="usrname"
+            id="username"
+            placeholder="enter your username"
+          />
+          <small>error messege</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="enter your mail"
+          />
+          <small>error messege</small>
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="enter password"
+          />
+          <small>error messege</small>
+        </div>
+        <div class="form-control">
+          <label for="password-con">Confirm password</label>
+          <input
+            type="password"
+            name="password-con"
+            id="password-con"
+            placeholder="confirm password"
+          />
+          <small>error messege</small>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </dic>
+    <script src="scripts.js"></script>
+  </body>
+</html>
